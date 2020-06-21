@@ -1,0 +1,17 @@
+.class1, .class2{
+    work style two class, that mean it is separete class;
+}
+.class1.class2{
+    when two class add one element then this item work;
+}
+
+.class1 .class2{
+    color: red;
+    when class2 inside one class1 then this item work;
+}
+div.intro{
+    background: lightblue;
+}
+.div + p{
+    color: red;
+}

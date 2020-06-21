@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            overflow-y: scroll;
+            user-select: none;
+            /* supported by Chrome and Opera */
+            -webkit-user-select: none;
+            /* Safari */
+            -khtml-user-select: none;
+            /* Konqueror HTML */
+            -moz-user-select: none;
+            /* Firefox */
+            -ms-user-select: none;
+            /* Internet Explorer/Edge */
+        }
+
+        ::not(body) {
+            color: white;
+        }
+
+        ::selection {
+            color: black;
+            background: yellow;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            background-color: red;
+            display: inline-block;
+            padding: 0px 10px;
+            margin: 0px 10px;
+            height: 30px;
+        }
+
+        ul li:hover {
+            background-color: red;
+        }
+
+        ul li a:hover {
+            color: white;
+            background: green;
+        }
+
+        ul li a {
+            text-decoration: none;
+        }
+
+        .navbar a {
+            display: block;
+            margin: 10px 0px;
+            text-decoration: none;
+            padding: 10px;
+            border: 2px dotted red;
+            width: 150px;
+            text-align: center;
+        }
+
+        .box {
+            width: 110%;
+            height: 200px;
+            border: 2px solid black;
+            margin-bottom: 100px;
+
+        }
+
+        .box1 {
+            border: 2px solid salmon;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .input-style {
+            padding: 100px;
+            width: 40%;
+        }
+
+        input {
+            display: block;
+            margin: 10px 0px;
+        }
+
+        .input-style input:nth-child(even) {
+            background-color: transparent;
+
+            border: none;
+            border-bottom: 2px solid green;
+            outline: none;
+        }
+
+        .input-style input:nth-child(odd) {
+            background-color: transparent;
+
+            border: none;
+            border-bottom: 2px solid red;
+            outline: none;
+        }
+
+        input:nth-child(even):focus {
+            color: yellow;
+            background-color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="">List 1</a></li>
+        <li><a href="">List 2</a></li>
+        <li><a href="">List 3</a></li>
+        <li><a href="">List 4</a></li>
+        <li><a href="">List 5</a></li>
+    </ul>
+
+    <div class="navbar">
+        <a href="">Home</a>
+        <a href=""> About</a>
+        <a href="">Serverce</a>
+        <a href="">Contact us</a>
+    </div>
+
+    <div class="box box1">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, quo rerum! Neque, suscipit aut a, quam
+            corrupti vero voluptate obcaecati voluptas eius quo veritatis aperiam temporibus, cumque labore possimus
+            tempora! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum earum odit ipsam minus! Illo dicta
+            inventore natus blanditiis quibusdam aut culpa commodi cupiditate, eveniet autem a hic adipisci doloribus
+            voluptatum quae magni tenetur, voluptates at explicabo dolor molestias aspernatur! Est ut fugit cumque illo?
+            Possimus culpa nihil similique harum eligendi consequatur expedita. Nemo asperiores maxime laborum quia
+            inventore commodi unde at repellendus. Ullam nihil eius vero commodi ex? Possimus nam sunt voluptates velit
+            et quibusdam vel atque dolorum nostrum expedita. Facere dolores doloremque vero, debitis obcaecati molestias
+            cupiditate quasi nam harum illum error hic tenetur similique nemo assumenda voluptatum itaque! Error nostrum
+            distinctio voluptatem optio possimus commodi molestias eveniet omnis enim eligendi corrupti, velit nobis
+            odit ea perspiciatis vel maiores vitae. Dolores maiores iure inventore perferendis explicabo eaque nisi
+            minus laudantium? Consequuntur, excepturi laboriosam alias sapiente eveniet ipsum enim distinctio laborum
+            recusandae vitae? Eos iure distinctio dicta. Fugiat, soluta vel.</p>
+    </div>
+    <div class="input-style">
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+    </div>
+
+</body>
+
+</html>
